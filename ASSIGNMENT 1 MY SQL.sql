@@ -39,7 +39,7 @@ INSERT INTO ORDERS VALUES (3001, 18.69, '1990-10-3', 2008, 1007),
 SELECT  COUNT(SNAME)  FROM SALESPEOPLE
 WHERE SNAME like 'a%'or SNAME like 'A%';
 -------------------------------------------------------
-SELECT * FROM C;
+
 SELECT S.SNAME, C.AMT
 FROM SALESPEOPLE AS S
 LEFT OUTER JOIN
@@ -51,7 +51,7 @@ SELECT COUNT(SNAME) FROM SALESPEOPLE WHERE CITY = 'NEWYORK';
 
 --------------------------------------------------------------------
 
-SELECT COUNT(SNAME) FROM SALESPEOPLE WHERE CITY ='LONDON' OR CITY = 'PARIS';
+SELECT *  FROM SALESPEOPLE WHERE CITY ='LONDON' OR CITY = 'PARIS';
 
 
 --------------------------------------------------------------------------
